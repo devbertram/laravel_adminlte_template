@@ -17,7 +17,6 @@ class MenuComposer{
 
 
 
-
 	public function __construct(MenuInterface $menu_repo){
 
 		$this->menu_repo = $menu_repo;

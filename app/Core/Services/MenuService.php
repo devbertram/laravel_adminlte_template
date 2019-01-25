@@ -51,10 +51,11 @@ class MenuService extends BaseService{
         if(!empty($rows)){
 
             foreach ($rows as $row) {
-                
-                $submenu = $this->submenu_repo->store($row, $menu);
 
+                $submenu = $this->submenu_repo->store($row, $menu);
+                
             }
+
         }
         
         $this->event->fire('menu.store');

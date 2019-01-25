@@ -88,7 +88,7 @@ return [
 
     'prefix' => env(
         'CACHE_PREFIX',
-        str_slug(env('APP_NAME', 'swep'), '_').'_cache'
+        str_slug(env('APP_NAME', 'laravel_adminlte_template'), '_').'_cache'
     ),
 
 ];

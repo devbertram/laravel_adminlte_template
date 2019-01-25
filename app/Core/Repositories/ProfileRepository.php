@@ -8,25 +8,19 @@ use App\Core\Interfaces\UserInterface;
 
 
 use Hash;
-use App\Models\User;
 
 
 class ProfileRepository extends BaseRepository implements ProfileInterface {
 	
 
 
-
-    protected $user;
     protected $user_repo;
 
 
 
+	public function __construct(UserInterface $user_repo){
 
-	public function __construct(User $user, UserInterface $user_repo){
-
-        $this->user = $user;
         $this->user_repo = $user_repo;
-
         parent::__construct();
 
     }

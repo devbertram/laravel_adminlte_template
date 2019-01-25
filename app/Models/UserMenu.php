@@ -22,6 +22,19 @@ class UserMenu extends Model{
 
 
 
+    protected $attributes = [
+
+        'user_id' => '',
+        'menu_id' => '',
+        'user_menu_id' => '',
+        'name' => '',
+        'route' => '',
+        'icon' => '',
+        'is_menu' => false,
+        'is_dropdown' => false,
+
+    ];
+
 
 
 	/** RELATIONSHIPS **/

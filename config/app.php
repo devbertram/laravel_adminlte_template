@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'laravel_admindek_template'),
+    'name' => env('APP_NAME', 'laravel_adminlte_template'),
 
     /*
     |--------------------------------------------------------------------------

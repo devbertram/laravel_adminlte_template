@@ -20,6 +20,21 @@ class UserSubmenu extends Model{
 
 
 
+    protected $attributes = [
+
+        'user_id' => '',
+        'submenu_id' => '',
+        'user_menu_id' => '',
+        'is_nav' => false,
+        'name' => '',
+        'route' => '',
+
+    ];
+
+
+
+
+
     /** RELATIONSHIPS **/
     public function userMenu() {
     	return $this->belongsTo('App\Models\UserMenu','user_menu_id','user_menu_id');
