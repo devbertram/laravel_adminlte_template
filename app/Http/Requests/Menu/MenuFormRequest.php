@@ -27,7 +27,6 @@ class MenuFormRequest extends FormRequest{
             'name'=>'required|string|max:45',
             'route'=>'required|string|max:45',
             'icon'=>'required|string|max:45',
-            'category'=>'required|string|max:45',
             'is_menu'=>'required|string|max:11',
             'is_dropdown'=>'required|string|max:5',
 
