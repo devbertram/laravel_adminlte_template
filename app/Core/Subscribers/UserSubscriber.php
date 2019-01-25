@@ -41,7 +41,7 @@ class UserSubscriber extends BaseSubscriber{
 
 	public function onStore(){
 
-        $this->__cache->deletePattern('swep_cache:users:fetch:*');
+        $this->__cache->deletePattern(''. config('app.name') .'_cache:users:fetch:*');
         
         $this->session->flash('USER_CREATE_SUCCESS', 'The User has been successfully created!');
         
