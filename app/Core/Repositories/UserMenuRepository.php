@@ -79,16 +79,15 @@ class UserMenuRepository extends BaseRepository implements UserMenuInterface {
 
 
 
-    public function getByCategory($cat){
+    public function getAll(){
 
-        $user_menus_u = $this->cache->remember('user_menus:getByUserId:'. $this->auth->user()->user_id .':'.$cat.'', 240, function() use ($cat){
+        $user_menus = $this->cache->remember('user_menus:getAll:'. $this->auth->user()->user_id .'', 240, function(){
           return $this->user_menu->where('user_id', $this->auth->user()->user_id)
-                                 ->where('category', $cat)
                                  ->with('userSubMenu')
                                  ->get();
         });
 
-        return $user_menus_u;
+        return $user_menus;
         
     }
 

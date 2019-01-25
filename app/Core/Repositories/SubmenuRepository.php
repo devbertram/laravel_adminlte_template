@@ -99,7 +99,8 @@ class SubmenuRepository extends BaseRepository implements SubmenuInterface {
     public function getAll(){
 
         $submenus = $this->cache->remember('submenus:getAll', 240, function(){
-            return $this->submenu->select('menu_id','submenu_id', 'name', 'is_nav')->orderBy('submenu_id', 'asc')->get();
+            return $this->submenu->select('menu_id','submenu_id', 'name', 'is_nav')
+                                 ->orderBy('submenu_id', 'asc')->get();
         });
         
         return $submenus;
