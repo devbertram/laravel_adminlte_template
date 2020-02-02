@@ -2,19 +2,12 @@
 
 @section('content')
 
-<section class="content-header">
-    <h1>Update User</h1>
-    <div class="pull-right" style="margin-top: -25px;">
-      {!! __html::back_button(['dashboard.user.index', 'dashboard.user.show']) !!}
-    </div>
-</section>
-
 <section class="content">
             
-    <div class="box">
+    <div class="box box-solid">
         
       <div class="box-header with-border">
-        <h3 class="box-title">Form</h3>
+        <h3 class="box-title">Edit User</h3>
         <div class="pull-right">
             <code>Fields with asterisks(*) are required</code>
         </div>
@@ -160,6 +153,9 @@
 
         <div class="box-footer">
           <button type="submit" class="btn btn-default">Save <i class="fa fa-fw fa-save"></i></button>
+          <div class="pull-right">
+            {!! __html::back_button(['dashboard.user.index', 'dashboard.user.show']) !!}
+          </div>
         </div>
 
       </form>

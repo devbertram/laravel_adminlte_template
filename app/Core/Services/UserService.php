@@ -157,6 +157,7 @@ class UserService extends BaseService{
         }
 
         $this->event->fire('user.update', $user);
+    
         return redirect()->route('dashboard.user.index');
 
     }

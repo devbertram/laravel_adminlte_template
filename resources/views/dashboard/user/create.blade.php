@@ -2,16 +2,12 @@
 
 @section('content')
 
-<section class="content-header">
-    <h1>Create User</h1>
-</section>
-
 <section class="content">
             
-    <div class="box">
+    <div class="box box-solid">
         
       <div class="box-header with-border">
-        <h3 class="box-title">Form</h3>
+        <h3 class="box-title">Create User</h3>
         <div class="pull-right">
             <code>Fields with asterisks(*) are required</code>
         </div> 
