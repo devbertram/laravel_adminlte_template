@@ -156,30 +156,12 @@
 
 
 
-
-@section('modals')
-
-  @if(Session::has('MENU_CREATE_SUCCESS'))
-
-    {!! __html::modal(
-      'menu_create', '<i class="fa fa-fw fa-check"></i> Saved!', Session::get('MENU_CREATE_SUCCESS')
-    ) !!}
-  
-  @endif
-
-@endsection 
-
-
-
-
-
-
 @section('scripts')
 
   <script type="text/javascript">
 
     @if(Session::has('MENU_CREATE_SUCCESS'))
-      $('#menu_create').modal('show');
+      {!! __js::toast(Session::get('MENU_CREATE_SUCCESS')) !!}
     @endif
 
 

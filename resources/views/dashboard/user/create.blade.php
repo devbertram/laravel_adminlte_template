@@ -141,22 +141,6 @@
 
 
 
-@section('modals')
-
-  @if(Session::has('USER_CREATE_SUCCESS'))
-
-    {!! __html::modal(
-      'user_create', '<i class="fa fa-fw fa-check"></i> Saved!', Session::get('USER_CREATE_SUCCESS')
-    ) !!}
-
-  @endif
-
-@endsection 
-
-
-
-
-
 @section('scripts')
 
   <script type="text/javascript">
