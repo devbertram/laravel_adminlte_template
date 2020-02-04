@@ -36,14 +36,14 @@ class UserFormRequest extends FormRequest{
 
             if(!empty($this->request->get('menu'))){
                 foreach($this->request->get('menu') as $key => $value){
-                    $rules['menu.'.$key] = 'string';
+                    $rules['menu.'.$key] = 'string|max:11';
                 } 
             }
 
 
             if(!empty($this->request->get('submenu'))){
                 foreach($this->request->get('submenu') as $key => $value){
-                    $rules['submenu.'.$key] = 'string';
+                    $rules['submenu.'.$key] = 'string|max:11';
                 }
             }
 
