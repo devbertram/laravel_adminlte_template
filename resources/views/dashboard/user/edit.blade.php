@@ -51,19 +51,6 @@
                   '12', 'position', 'text', 'Position / Plantilla *', 'Position / Plantilla', old('position') ? old('position') : $user->position, $errors->has('position'), $errors->first('position'), 'data-transform="uppercase"'
                 ) !!}
 
-              </div>
-            </div>
-          </div>
-
-
-
-          <div class="col-md-6">
-            <div class="box">
-              <div class="box-header with-border">
-                <h3 class="box-title">User Modules</h3>
-              </div>
-              <div class="box-body">
-
                 {!! __form::textbox(
                   '12', 'email', 'email', 'Email *', 'Email', old('email') ? old('email') : $user->email, $errors->has('email'), $errors->first('email'), ''
                 ) !!}
@@ -78,7 +65,7 @@
 
 
 
-          <div class="col-md-12">
+          <div class="col-md-6">
             <div class="box">
               <div class="box-header with-border">
                 <h3 class="box-title">User Modules</h3>
